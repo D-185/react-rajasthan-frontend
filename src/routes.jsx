@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
-import { ApolloProvider } from "@apollo/client/react";
+import { ApolloProvider } from "@apollo/client";
 import client from "./apollo/client";
 import MainLayout from "./layouts/MainLayout";
 import { DynamicPage, HomePage, ErrorPage } from "./pages";
