@@ -5,11 +5,11 @@ const Section1 = ({ data }) => {
     <div className="section-1 bg-white p-6 rounded-lg shadow-sm mb-6">
       <div className="flex flex-col md:flex-row items-center gap-6">
         {data.imgUrl && (
-          <div className="w-full md:w-1/3">
+          <div className="md:w-1/3">
             <img
               src={data.imgUrl}
               alt={data.name || 'Profile'}
-              className="w-full h-auto rounded-lg"
+              className="rounded-lg"
             />
           </div>
         )}

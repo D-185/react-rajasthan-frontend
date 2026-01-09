@@ -15,6 +15,7 @@ export default ({ mode }) => {
     resolve: {
       extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
       alias: {
+        '@': resolve(__dirname, './src')
         // Remove the explicit Apollo Client alias to let Vite handle it
       },
     },
