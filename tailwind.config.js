@@ -1,11 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [require('tailwindcss-animate')],
+execute: async () => {
+  const config = {
+    content: [
+      "./index.html",
+      "./src/**/*.{js,jsx,ts,tsx}",
+    ],
+    corePlugins: {
+      preflight: false, // Disable Tailwind's base/reset styles
+    },
+    theme: {
+      extend: {},
+    },
+    plugins: [require('tailwindcss-animate')],
+  };
+  return config;
 }

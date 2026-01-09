@@ -1,7 +1,4 @@
 
-/* Tailwind base styles */
-@import "tailwindcss/preflight";
-
 /* Custom variants */
 @custom-variant dark (&:is(.dark *));
 
