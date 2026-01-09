@@ -32,7 +32,7 @@ export const usePageData = (slug) => {
   return {
     loading,
     error,
-    page: data?.pages?.data?.[0]?.attributes || null,
+    page: data?.pages?.[0] || null,
     networkStatus,
   };
 };
