@@ -12,14 +12,14 @@ const PageCard = ({ page, className }) => {
 
   return (
     <div 
-      className={cn("group relative h-full transition-all duration-300 hover:z-10", className)}
+      className={cn("group relative transition-all duration-300 hover:z-10 w-full h-full flex flex-col", className)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link to={`/${page.slug}`} className="h-full block">
-        <Card className="h-full flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
+      <Link to={`/${page.slug}`} className="block h-full flex flex-col">
+        <Card className="flex flex-col flex-1 overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-200 dark:border-gray-700">
           {/* Image Section */}
-          <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-800">
+          <div className="relative w-full aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-800">
             {heroSection?.imgUrl ? (
               <>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />

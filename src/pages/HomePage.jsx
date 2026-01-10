@@ -48,15 +48,15 @@ const HomePage = () => {
               </Button>
             </Card>
           ) : (
-            <div className="flex flex-wrap gap-6">
+            <div className="w-full flex flex-wrap gap-6">
               {loading && !pages.length
                 ? Array(8).fill(0).map((_, i) => (
-                    <div key={i} className="sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                    <div key={i} className="flex-grow min-w-[280px] max-w-[calc(33.333%-1rem)]">
                       <CardSkeleton className="h-64 w-full" />
                     </div>
                   ))
-                : pages.map((page) => (
-                    <div key={page.id} className="sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]">
+                : pages.map((page, index) => (
+                    <div key={index} className="flex-grow min-w-[280px] max-w-[calc(33.333%-1rem)]">
                       <PageCard page={page} className="h-full w-full" />
                     </div>
                   ))}

@@ -7,6 +7,7 @@ const socialIcons = {
 };
 
 const Section3 = ({ data }) => {
+  console.log('data', data)
   return (
     <div className="section-3 bg-white p-6 rounded-lg shadow-sm mb-6">
       {data.socialLinks?.length > 0 && (

@@ -7,7 +7,7 @@ const MainLayout = ({ children }) => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <div className="pt-16"> {/* This div adds spacing equal to the header height */}
-        <main className="flex-grow container mt-5 mx-auto px-4 py-8">
+        <main className="flex-grow container mx-auto px-4">
           {children}
         </main>
         <Footer />

@@ -26,7 +26,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white/90'}`}
     >
-      <nav className="container mx-auto px-4 py-3">
+      <nav className="container mx-auto px-4 py-3 bg-white from-white/80 via-white/80 to-transparent">
         <div className="flex justify-between items-center">
           <div className="flex-1 flex justify-center">
             <Link 
