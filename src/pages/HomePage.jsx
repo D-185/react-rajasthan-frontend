@@ -48,7 +48,7 @@ const HomePage = () => {
               </Button>
             </Card>
           ) : (
-            <div className="w-full flex flex-wrap gap-6">
+            <div className="w-full flex flex-wrap gap-6 justify-center">
               {loading && !pages.length
                 ? Array(8).fill(0).map((_, i) => (
                     <div key={i} className="flex-grow min-w-[280px] max-w-[calc(33.333%-1rem)]">

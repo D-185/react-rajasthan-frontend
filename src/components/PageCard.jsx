@@ -66,11 +66,11 @@ const PageCard = ({ page, className }) => {
               )}
             </CardHeader>
             
-            <CardFooter className="p-0 mt-auto">
+            <CardFooter className="p-0 mt-auto border-t-0">
               <Button 
                 variant="ghost" 
                 className={cn(
-                  "w-full justify-between group-hover:bg-gray-50 dark:group-hover:bg-gray-700/50",
+                  "border-t-0 bg-white w-full justify-between group-hover:bg-gray-50 dark:group-hover:bg-gray-700/50",
                   isHovered ? "text-blue-600 dark:text-blue-400" : ""
                 )}
               >
